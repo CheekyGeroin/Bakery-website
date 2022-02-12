@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery-website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="./index.html">О нас</a></li>
-          <li><a href="#Магазин">Магазин</a></li>
-          <li><a href="#">Акции</a></li>
+        <ul class="nav-list">
+          <li><a href="./index.html" class="link">О нас</a></li>
+          <li><a href="#Магазин" class="link">Магазин</a></li>
+          <li><a href="#" class="link">Акции</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#Контакты">Контакты</a></li>
-          <li><a href="#Адрес">Адрес</a></li>
+        <ul class="nav-list">
+          <li><a href="#" class="link">Доставка</a></li>
+          <li><a href="#Контакты" class="link">Контакты</a></li>
+          <li><a href="#Адрес" class="link">Адрес</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero -->
-      <section>
-        <h1>Пекарня, которая <span>покорит</span> <span>ваше сердце</span></h1>
-        <p>Ручной способ приготовления хлеба, булочек, пирожков, печенья и тортов.</p>
-        <p>Только свежие и натуральные продукты. Никаких улучшителей, красителей и консервантов!</p>
-        <p>Команда профессиональных кондитеров, искренне любящих свое «дело».</p>
-        <a href="#">
+      <section class="hero">
+        <h1 class="hero-title">Пекарня, которая <span>покорит</span> <span>ваше сердце</span></h1>
+        <p class="hero-text">Ручной способ приготовления хлеба, булочек, пирожков, печенья и тортов.</p>
+        <p class="hero-text">Только свежие и натуральные продукты. Никаких улучшителей, красителей и консервантов!</p>
+        <p class="hero-text">Команда профессиональных кондитеров, искренне любящих свое «дело».</p>
+        <a href="#" class="hero-link">
           <img
             src="./images/hero/unfinished-rings.svg"
             alt="незаконченные кольца"
@@ -39,12 +44,12 @@
         </a>
       </section>
       <!-- Store -->
-      <section id="Магазин">
-        <h2>Магазин</h2>
-        <ul>
+      <section id="Магазин" class="section">
+        <h2 class="section-title">Магазин</h2>
+        <ul class="list">
           <li>
             <img src="./images/store/chocolate.jpg" alt="Шоколад" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -56,7 +61,7 @@
           </li>
           <li>
             <img src="./images/store/cookies.jpg" alt="Печенье" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -68,7 +73,7 @@
           </li>
           <li>
             <img src="./images/store/donuts.jpg" alt="Пончики" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -79,10 +84,10 @@
             </a>
           </li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/store/bakery-products.jpg" alt="Выпечка" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -94,7 +99,7 @@
           </li>
           <li>
             <img src="./images/store/cakes.jpg" alt="Пирожные" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -106,7 +111,7 @@
           </li>
           <li>
             <img src="./images/store/pies.jpg" alt="Пироги" width="260" height="264" />
-            <a href="#">
+            <a href="#" class="store-link">
               <img
                 src="./images/store/unfinished-rings.svg"
                 alt="незаконченные кольца"
@@ -119,25 +124,25 @@
         </ul>
       </section>
       <!-- Addresses -->
-      <section id="Адрес">
-        <h2>Приглашаем в наши кафе</h2>
-        <p>Будни <time datetime="2022-02-04T09:00-22:00">09:00-22:00</time></p>
-        <p>Выходные <time datetime="2022-02-05T10:00-22:00">10:00-22:00</time></p>
-        <div>
-          <h3>Кафе на Ленинском</h3>
-          <address>Ленинский проспект, 99 м. Проспект Вернадского</address>
-          <a href="tel:+74957922840">+7 495 792-28-40</a>
+      <section id="Адрес" class="section">
+        <h2 class="section-title-address">Приглашаем в наши кафе</h2>
+        <p class="section-text">Будни <time datetime="2022-02-04T09:00-22:00">09:00-22:00</time></p>
+        <p class="section-text">Выходные <time datetime="2022-02-05T10:00-22:00">10:00-22:00</time></p>
+        <div class="address-section">
+          <h3 class="section-subtitle">Кафе на Ленинском</h3>
+          <address class="address">Ленинский проспект, 99 м. Проспект Вернадского</address>
+          <a href="tel:+74957922840" class="link">+7 495 792-28-40</a>
         </div>
-        <div>
-          <h3>Кафе на Вернадского</h3>
-          <address>Проспект Вернадского, 97к1 м. Юго-Западная</address>
-          <a href="tel:+74957922840">+7 495 792-28-40</a>
+        <div class="address-section">
+          <h3 class="section-subtitle">Кафе на Вернадского</h3>
+          <address class="address">Проспект Вернадского, 97к1 м. Юго-Западная</address>
+          <a href="tel:+74957922840" class="link">+7 495 792-28-40</a>
         </div>
       </section>
     </main>
-    <footer id="Контакты">
-      <a href="tel:+74957921730">+7 495 792-17-30</a>
-      <ul>
+    <footer id="Контакты" class="footer">
+      <a href="tel:+74957921730" class="footer-link">+7 495 792-17-30</a>
+      <ul class="footer-list">
         <li>
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow">
             <img src="./images/footer/facebook.svg" alt="Facebook" width="36" height="36" />
@@ -159,7 +164,7 @@
           </a>
         </li>
       </ul>
-      <a href="mailto:zakaz@muenger.ru">zakaz@muenger.ru</a>
+      <a href="mailto:zakaz@muenger.ru" class="footer-link">zakaz@muenger.ru</a>
     </footer>
   </body>
 </html>
